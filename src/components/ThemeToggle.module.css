@@ -1,0 +1,41 @@
+.toggleButton {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+  
+  .toggleButton:hover {
+    background: var(--card-bg);
+    transform: scale(1.1) rotate(15deg);
+    background: color-mix(in srgb, var(--accent) 15%, var(--card-bg));
+  transform: scale(1.1);
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: var(--text);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform 0.3s ease;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .toggleButton:hover .icon {
+    transform: scale(1.1);
+  }
